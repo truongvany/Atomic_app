@@ -1,0 +1,792 @@
+{
+  "updatedAtIso": "2026-11-17T05:28:06.562Z",
+  "warehouses": [
+    {
+      "id": "hub-zrh",
+      "code": "ZRH-01",
+      "name": "Zurich Free-Port Vault",
+      "city": "Zurich, CH",
+      "region": "Central Europe",
+      "capacityUnits": 14500,
+      "occupiedUnits": 11240,
+      "dockBaysActive": 11,
+      "dockBaysTotal": 14,
+      "managerName": "Henrik Lindholm",
+      "securityTier": "Bonded Tier-1"
+    },
+    {
+      "id": "hub-rtm",
+      "code": "RTM-02",
+      "name": "Rotterdam Deepwater Terminal",
+      "city": "Rotterdam, NL",
+      "region": "North Sea Corridor",
+      "capacityUnits": 28000,
+      "occupiedUnits": 23950,
+      "dockBaysActive": 19,
+      "dockBaysTotal": 22,
+      "managerName": "Annelies Van Der Berg",
+      "securityTier": "Customs Cleared"
+    },
+    {
+      "id": "hub-sgp",
+      "code": "SGP-04",
+      "name": "Singapore Jurong Logistics Hub",
+      "city": "Singapore, SG",
+      "region": "APAC Maritime",
+      "capacityUnits": 22000,
+      "occupiedUnits": 15890,
+      "dockBaysActive": 12,
+      "dockBaysTotal": 18,
+      "managerName": "Marcus Tan",
+      "securityTier": "Bonded Tier-1"
+    },
+    {
+      "id": "hub-jfk",
+      "code": "JFK-03",
+      "name": "New York Air Cargo Annex",
+      "city": "Jamaica, NY",
+      "region": "North Atlantic",
+      "capacityUnits": 16000,
+      "occupiedUnits": 10920,
+      "dockBaysActive": 9,
+      "dockBaysTotal": 12,
+      "managerName": "Claire Vance",
+      "securityTier": "TSA Bonded"
+    }
+  ],
+  "inventory": [
+    {
+      "sku": "SKU-OPT-4012",
+      "name": "300mm Monocrystalline Silicon Wafers (Lot A)",
+      "category": "Optics & Silicon",
+      "warehouseId": "hub-sgp",
+      "onHand": 420,
+      "reserved": 85,
+      "reorderPoint": 150,
+      "unitCostUsd": 1840,
+      "unitWeightKg": 4.2,
+      "lastAuditIso": "2026-11-15T14:20:00Z"
+    },
+    {
+      "sku": "SKU-OPT-4089",
+      "name": "Sapphire Interferometer Lenses (Grade 1)",
+      "category": "Optics & Silicon",
+      "warehouseId": "hub-zrh",
+      "onHand": 164,
+      "reserved": 40,
+      "reorderPoint": 90,
+      "unitCostUsd": 2650,
+      "unitWeightKg": 1.8,
+      "lastAuditIso": "2026-11-16T08:10:00Z"
+    },
+    {
+      "sku": "SKU-CRY-1104",
+      "name": "Vacuum-Jacketed Cryogenic Relief Valves",
+      "category": "Cryo & Fluidics",
+      "warehouseId": "hub-rtm",
+      "onHand": 78,
+      "reserved": 24,
+      "reorderPoint": 60,
+      "unitCostUsd": 1420,
+      "unitWeightKg": 12.5,
+      "lastAuditIso": "2026-11-14T17:45:00Z"
+    },
+    {
+      "sku": "SKU-CRY-1190",
+      "name": "Liquid Nitrogen Manifold Assemblies",
+      "category": "Cryo & Fluidics",
+      "warehouseId": "hub-jfk",
+      "onHand": 34,
+      "reserved": 18,
+      "reorderPoint": 45,
+      "unitCostUsd": 3890,
+      "unitWeightKg": 28,
+      "lastAuditIso": "2026-11-16T06:30:00Z"
+    },
+    {
+      "sku": "SKU-AER-7701",
+      "name": "Titanium Grade-5 Bulkhead Forgings",
+      "category": "Aerospace Alloys",
+      "warehouseId": "hub-rtm",
+      "onHand": 215,
+      "reserved": 60,
+      "reorderPoint": 100,
+      "unitCostUsd": 2150,
+      "unitWeightKg": 19.4,
+      "lastAuditIso": "2026-11-15T11:00:00Z"
+    },
+    {
+      "sku": "SKU-AER-7734",
+      "name": "Inconel 718 Turbine Shroud Rings",
+      "category": "Aerospace Alloys",
+      "warehouseId": "hub-jfk",
+      "onHand": 92,
+      "reserved": 15,
+      "reorderPoint": 50,
+      "unitCostUsd": 4600,
+      "unitWeightKg": 14.2,
+      "lastAuditIso": "2026-11-16T09:15:00Z"
+    },
+    {
+      "sku": "SKU-ACT-2055",
+      "name": "Zero-Backlash Harmonic Servo Actuators",
+      "category": "Precision Actuators",
+      "warehouseId": "hub-zrh",
+      "onHand": 310,
+      "reserved": 95,
+      "reorderPoint": 120,
+      "unitCostUsd": 980,
+      "unitWeightKg": 6.4,
+      "lastAuditIso": "2026-11-15T19:40:00Z"
+    },
+    {
+      "sku": "SKU-ACT-2091",
+      "name": "Linear Magnetic Encoder Stages (400mm)",
+      "category": "Precision Actuators",
+      "warehouseId": "hub-sgp",
+      "onHand": 58,
+      "reserved": 22,
+      "reorderPoint": 65,
+      "unitCostUsd": 1750,
+      "unitWeightKg": 8.9,
+      "lastAuditIso": "2026-11-16T04:50:00Z"
+    },
+    {
+      "sku": "SKU-CNT-9002",
+      "name": "Hermetic Thermal Transit Canisters (ISO-7)",
+      "category": "Containment",
+      "warehouseId": "hub-zrh",
+      "onHand": 190,
+      "reserved": 44,
+      "reorderPoint": 75,
+      "unitCostUsd": 1120,
+      "unitWeightKg": 16,
+      "lastAuditIso": "2026-11-15T15:10:00Z"
+    },
+    {
+      "sku": "SKU-CNT-9048",
+      "name": "Antistatic Nitrogen-Purged Wafer Pods",
+      "category": "Containment",
+      "warehouseId": "hub-sgp",
+      "onHand": 540,
+      "reserved": 110,
+      "reorderPoint": 180,
+      "unitCostUsd": 490,
+      "unitWeightKg": 3.1,
+      "lastAuditIso": "2026-11-16T02:20:00Z"
+    },
+    {
+      "sku": "SKU-OPT-4115",
+      "name": "Fused Silica Photomask Substrates",
+      "category": "Optics & Silicon",
+      "warehouseId": "hub-jfk",
+      "onHand": 112,
+      "reserved": 28,
+      "reorderPoint": 60,
+      "unitCostUsd": 3250,
+      "unitWeightKg": 2.6,
+      "lastAuditIso": "2026-11-16T10:05:00Z"
+    },
+    {
+      "sku": "SKU-CRY-1210",
+      "name": "Helium Mass-Spectrometer Leak Seals",
+      "category": "Cryo & Fluidics",
+      "warehouseId": "hub-rtm",
+      "onHand": 42,
+      "reserved": 14,
+      "reorderPoint": 50,
+      "unitCostUsd": 860,
+      "unitWeightKg": 1.4,
+      "lastAuditIso": "2026-11-15T22:00:00Z"
+    }
+  ],
+  "consignments": [
+    {
+      "id": "SOV-8842-ZRH",
+      "consignee": "Helvetia Photonics AG",
+      "referenceCode": "PO-2026-9914",
+      "originHubId": "hub-zrh",
+      "destinationHubId": "hub-jfk",
+      "carrierTier": "Air Freight",
+      "status": "In-Transit",
+      "priority": "Expedited",
+      "valuationUsd": 214400,
+      "weightKg": 364.8,
+      "etaIso": "2026-11-18T14:30:00Z",
+      "createdAtIso": "2026-11-14T08:15:00Z",
+      "dispatchNotes": "Temperature-stabilized main deck cargo bay; shock logger sealed at ZRH gate 4.",
+      "lineItems": [
+        {
+          "sku": "SKU-OPT-4089",
+          "name": "Sapphire Interferometer Lenses (Grade 1)",
+          "qty": 40,
+          "unitValueUsd": 2650,
+          "unitWeightKg": 1.8
+        },
+        {
+          "sku": "SKU-CNT-9002",
+          "name": "Hermetic Thermal Transit Canisters (ISO-7)",
+          "qty": 18,
+          "unitValueUsd": 1120,
+          "unitWeightKg": 16
+        },
+        {
+          "sku": "SKU-ACT-2055",
+          "name": "Zero-Backlash Harmonic Servo Actuators",
+          "qty": 90,
+          "unitValueUsd": 980,
+          "unitWeightKg": 6.4
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "ZRH-01",
+          "stage": "Origin Dispatch",
+          "location": "Zurich Free-Port Vault",
+          "status": "cleared",
+          "timestampIso": "2026-11-14T09:40:00Z",
+          "notes": "Palletized and sealed under bond certificate #CH-8812."
+        },
+        {
+          "id": "wp-2",
+          "code": "ZRH-CUS",
+          "stage": "Export Customs",
+          "location": "Zurich Airport Cargo Customs",
+          "status": "cleared",
+          "timestampIso": "2026-11-15T06:15:00Z",
+          "notes": "Dual-use optical export declaration cleared without inspection hold."
+        },
+        {
+          "id": "wp-3",
+          "code": "ATL-COR",
+          "stage": "Regional Transit",
+          "location": "North Atlantic Air Corridor",
+          "status": "active",
+          "timestampIso": "2026-11-16T17:20:00Z",
+          "notes": "Airborne on Freighter LX-408; cabin pressure nominal."
+        },
+        {
+          "id": "wp-4",
+          "code": "JFK-03",
+          "stage": "Destination Dock",
+          "location": "New York Air Cargo Annex",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Bay 04 assigned for priority customs brokerage release."
+        }
+      ]
+    },
+    {
+      "id": "SOV-7391-RTM",
+      "consignee": "Nordic Cryogenics GmbH",
+      "referenceCode": "PO-2026-9840",
+      "originHubId": "hub-rtm",
+      "destinationHubId": "hub-zrh",
+      "carrierTier": "Armored Ground",
+      "status": "Delayed",
+      "priority": "Bonded",
+      "valuationUsd": 163080,
+      "weightKg": 1464,
+      "etaIso": "2026-11-17T19:00:00Z",
+      "createdAtIso": "2026-11-13T11:00:00Z",
+      "dispatchNotes": "Held at Basel border checkpoint awaiting updated metallurgical certificate addendum.",
+      "lineItems": [
+        {
+          "sku": "SKU-AER-7701",
+          "name": "Titanium Grade-5 Bulkhead Forgings",
+          "qty": 60,
+          "unitValueUsd": 2150,
+          "unitWeightKg": 19.4
+        },
+        {
+          "sku": "SKU-CRY-1104",
+          "name": "Vacuum-Jacketed Cryogenic Relief Valves",
+          "qty": 24,
+          "unitValueUsd": 1420,
+          "unitWeightKg": 12.5
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "RTM-02",
+          "stage": "Origin Dispatch",
+          "location": "Rotterdam Deepwater Terminal",
+          "status": "cleared",
+          "timestampIso": "2026-11-13T14:20:00Z",
+          "notes": "Loaded onto climate-controlled armored trailer NL-442."
+        },
+        {
+          "id": "wp-2",
+          "code": "BSL-CUS",
+          "stage": "Export Customs",
+          "location": "Basel Border Inspection Post",
+          "status": "active",
+          "timestampIso": "2026-11-15T16:45:00Z",
+          "notes": "Customs hold: supplementary alloy origin certificate requested."
+        },
+        {
+          "id": "wp-3",
+          "code": "ZRH-TRN",
+          "stage": "Regional Transit",
+          "location": "A3 Corridor Transit",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Awaiting customs release signal."
+        },
+        {
+          "id": "wp-4",
+          "code": "ZRH-01",
+          "stage": "Destination Dock",
+          "location": "Zurich Free-Port Vault",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Vault intake slot scheduled."
+        }
+      ]
+    },
+    {
+      "id": "SOV-6104-SGP",
+      "consignee": "Kuroda Lithography Corp",
+      "referenceCode": "PO-2026-9788",
+      "originHubId": "hub-sgp",
+      "destinationHubId": "hub-rtm",
+      "carrierTier": "Sea Container",
+      "status": "In-Transit",
+      "priority": "Standard",
+      "valuationUsd": 248800,
+      "weightKg": 893.8,
+      "etaIso": "2026-11-24T08:00:00Z",
+      "createdAtIso": "2026-11-08T05:30:00Z",
+      "dispatchNotes": "40ft nitrogen-purged reefer container; continuous telemetry logged every 15 minutes.",
+      "lineItems": [
+        {
+          "sku": "SKU-OPT-4012",
+          "name": "300mm Monocrystalline Silicon Wafers (Lot A)",
+          "qty": 85,
+          "unitValueUsd": 1840,
+          "unitWeightKg": 4.2
+        },
+        {
+          "sku": "SKU-CNT-9048",
+          "name": "Antistatic Nitrogen-Purged Wafer Pods",
+          "qty": 110,
+          "unitValueUsd": 490,
+          "unitWeightKg": 3.1
+        },
+        {
+          "sku": "SKU-ACT-2091",
+          "name": "Linear Magnetic Encoder Stages (400mm)",
+          "qty": 22,
+          "unitValueUsd": 1750,
+          "unitWeightKg": 8.9
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "SGP-04",
+          "stage": "Origin Dispatch",
+          "location": "Singapore Jurong Logistics Hub",
+          "status": "cleared",
+          "timestampIso": "2026-11-08T09:10:00Z",
+          "notes": "Container MSCU-892104 sealed at Jurong Quay 7."
+        },
+        {
+          "id": "wp-2",
+          "code": "SGP-CUS",
+          "stage": "Export Customs",
+          "location": "PSA Maritime Customs Gate",
+          "status": "cleared",
+          "timestampIso": "2026-11-09T03:40:00Z",
+          "notes": "Manifest verified against semiconductor export schedule."
+        },
+        {
+          "id": "wp-3",
+          "code": "MED-SEA",
+          "stage": "Regional Transit",
+          "location": "Mediterranean Feeder Lane",
+          "status": "active",
+          "timestampIso": "2026-11-16T12:00:00Z",
+          "notes": "Vessel MV Sovereign Horizon passing Strait of Gibraltar."
+        },
+        {
+          "id": "wp-4",
+          "code": "RTM-02",
+          "stage": "Destination Dock",
+          "location": "Rotterdam Deepwater Terminal",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Berth 14 reserved for gantry offload."
+        }
+      ]
+    },
+    {
+      "id": "SOV-5520-JFK",
+      "consignee": "Vanguard Orbital Systems",
+      "referenceCode": "PO-2026-9615",
+      "originHubId": "hub-jfk",
+      "destinationHubId": "hub-zrh",
+      "carrierTier": "Air Freight",
+      "status": "Cleared",
+      "priority": "Expedited",
+      "valuationUsd": 230020,
+      "weightKg": 789.8,
+      "etaIso": "2026-11-15T16:00:00Z",
+      "createdAtIso": "2026-11-12T13:10:00Z",
+      "dispatchNotes": "Signed off by Zurich intake lead H. Lindholm with zero variance.",
+      "lineItems": [
+        {
+          "sku": "SKU-AER-7734",
+          "name": "Inconel 718 Turbine Shroud Rings",
+          "qty": 15,
+          "unitValueUsd": 4600,
+          "unitWeightKg": 14.2
+        },
+        {
+          "sku": "SKU-OPT-4115",
+          "name": "Fused Silica Photomask Substrates",
+          "qty": 28,
+          "unitValueUsd": 3250,
+          "unitWeightKg": 2.6
+        },
+        {
+          "sku": "SKU-CRY-1190",
+          "name": "Liquid Nitrogen Manifold Assemblies",
+          "qty": 18,
+          "unitValueUsd": 3890,
+          "unitWeightKg": 28
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "JFK-03",
+          "stage": "Origin Dispatch",
+          "location": "New York Air Cargo Annex",
+          "status": "cleared",
+          "timestampIso": "2026-11-12T16:00:00Z",
+          "notes": "TSA bonded screening complete."
+        },
+        {
+          "id": "wp-2",
+          "code": "JFK-CUS",
+          "stage": "Export Customs",
+          "location": "US CBP Outbound Port 47",
+          "status": "cleared",
+          "timestampIso": "2026-11-13T02:20:00Z",
+          "notes": "AES filing cleared."
+        },
+        {
+          "id": "wp-3",
+          "code": "ZRH-TRN",
+          "stage": "Regional Transit",
+          "location": "Zurich Cargo Apron",
+          "status": "cleared",
+          "timestampIso": "2026-11-14T19:45:00Z",
+          "notes": "Offloaded directly to bonded ramp shuttle."
+        },
+        {
+          "id": "wp-4",
+          "code": "ZRH-01",
+          "stage": "Destination Dock",
+          "location": "Zurich Free-Port Vault",
+          "status": "cleared",
+          "timestampIso": "2026-11-15T15:18:00Z",
+          "notes": "Delivered to Vault Sector B; POD archived."
+        }
+      ]
+    },
+    {
+      "id": "SOV-4918-RTM",
+      "consignee": "Eindhoven Metrology NV",
+      "referenceCode": "PO-2026-9952",
+      "originHubId": "hub-rtm",
+      "destinationHubId": "hub-sgp",
+      "carrierTier": "Sea Container",
+      "status": "Pending",
+      "priority": "Standard",
+      "valuationUsd": 78640,
+      "weightKg": 356,
+      "etaIso": "2026-11-29T10:00:00Z",
+      "createdAtIso": "2026-11-16T15:40:00Z",
+      "dispatchNotes": "Manifest staged at Rotterdam Dock 9 awaiting crane assignment.",
+      "lineItems": [
+        {
+          "sku": "SKU-CRY-1210",
+          "name": "Helium Mass-Spectrometer Leak Seals",
+          "qty": 14,
+          "unitValueUsd": 860,
+          "unitWeightKg": 1.4
+        },
+        {
+          "sku": "SKU-AER-7701",
+          "name": "Titanium Grade-5 Bulkhead Forgings",
+          "qty": 18,
+          "unitValueUsd": 2150,
+          "unitWeightKg": 19.4
+        },
+        {
+          "sku": "SKU-CRY-1104",
+          "name": "Vacuum-Jacketed Cryogenic Relief Valves",
+          "qty": 10,
+          "unitValueUsd": 1420,
+          "unitWeightKg": 12.5
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "RTM-02",
+          "stage": "Origin Dispatch",
+          "location": "Rotterdam Deepwater Terminal",
+          "status": "active",
+          "timestampIso": "2026-11-16T15:40:00Z",
+          "notes": "Staging pallet verification underway at Dock 09."
+        },
+        {
+          "id": "wp-2",
+          "code": "RTM-CUS",
+          "stage": "Export Customs",
+          "location": "Europort Automated Customs",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Pre-clearance packet queued."
+        },
+        {
+          "id": "wp-3",
+          "code": "SUEZ-TRN",
+          "stage": "Regional Transit",
+          "location": "Maritime Corridor",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Scheduled aboard MV Aurelia."
+        },
+        {
+          "id": "wp-4",
+          "code": "SGP-04",
+          "stage": "Destination Dock",
+          "location": "Singapore Jurong Logistics Hub",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Pending berth allocation."
+        }
+      ]
+    },
+    {
+      "id": "SOV-4402-ZRH",
+      "consignee": "Bavaria Precision Robotics",
+      "referenceCode": "PO-2026-9512",
+      "originHubId": "hub-zrh",
+      "destinationHubId": "hub-rtm",
+      "carrierTier": "Priority Rail",
+      "status": "Cleared",
+      "priority": "Standard",
+      "valuationUsd": 94240,
+      "weightKg": 612,
+      "etaIso": "2026-11-14T11:00:00Z",
+      "createdAtIso": "2026-11-11T07:20:00Z",
+      "dispatchNotes": "Rail freight car #CH-902 arrived on schedule at Rotterdam intermodal siding.",
+      "lineItems": [
+        {
+          "sku": "SKU-ACT-2055",
+          "name": "Zero-Backlash Harmonic Servo Actuators",
+          "qty": 62,
+          "unitValueUsd": 980,
+          "unitWeightKg": 6.4
+        },
+        {
+          "sku": "SKU-CNT-9002",
+          "name": "Hermetic Thermal Transit Canisters (ISO-7)",
+          "qty": 30,
+          "unitValueUsd": 1120,
+          "unitWeightKg": 16
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "ZRH-01",
+          "stage": "Origin Dispatch",
+          "location": "Zurich Free-Port Vault",
+          "status": "cleared",
+          "timestampIso": "2026-11-11T10:15:00Z",
+          "notes": "Intermodal rail car sealed."
+        },
+        {
+          "id": "wp-2",
+          "code": "DE-CUS",
+          "stage": "Export Customs",
+          "location": "Mannheim Rail Transit Desk",
+          "status": "cleared",
+          "timestampIso": "2026-11-12T13:30:00Z",
+          "notes": "Transit T1 document stamped."
+        },
+        {
+          "id": "wp-3",
+          "code": "NL-TRN",
+          "stage": "Regional Transit",
+          "location": "Betuweroute Freight Line",
+          "status": "cleared",
+          "timestampIso": "2026-11-13T21:10:00Z",
+          "notes": "Cleared Venlo rail junction."
+        },
+        {
+          "id": "wp-4",
+          "code": "RTM-02",
+          "stage": "Destination Dock",
+          "location": "Rotterdam Deepwater Terminal",
+          "status": "cleared",
+          "timestampIso": "2026-11-14T10:42:00Z",
+          "notes": "Received into Europort Warehouse B."
+        }
+      ]
+    },
+    {
+      "id": "SOV-3819-SGP",
+      "consignee": "Taipei MicroFab Ventures",
+      "referenceCode": "PO-2026-9875",
+      "originHubId": "hub-sgp",
+      "destinationHubId": "hub-jfk",
+      "carrierTier": "Air Freight",
+      "status": "Delayed",
+      "priority": "Expedited",
+      "valuationUsd": 141900,
+      "weightKg": 301.2,
+      "etaIso": "2026-11-18T05:00:00Z",
+      "createdAtIso": "2026-11-14T22:05:00Z",
+      "dispatchNotes": "Rerouted via Anchorage due to North Pacific jetstream turbulence.",
+      "lineItems": [
+        {
+          "sku": "SKU-OPT-4012",
+          "name": "300mm Monocrystalline Silicon Wafers (Lot A)",
+          "qty": 55,
+          "unitValueUsd": 1840,
+          "unitWeightKg": 4.2
+        },
+        {
+          "sku": "SKU-ACT-2091",
+          "name": "Linear Magnetic Encoder Stages (400mm)",
+          "qty": 20,
+          "unitValueUsd": 1750,
+          "unitWeightKg": 8.9
+        },
+        {
+          "sku": "SKU-CNT-9048",
+          "name": "Antistatic Nitrogen-Purged Wafer Pods",
+          "qty": 12,
+          "unitValueUsd": 490,
+          "unitWeightKg": 3.1
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "SGP-04",
+          "stage": "Origin Dispatch",
+          "location": "Singapore Jurong Logistics Hub",
+          "status": "cleared",
+          "timestampIso": "2026-11-15T01:15:00Z",
+          "notes": "Cleanroom double-bagging verified."
+        },
+        {
+          "id": "wp-2",
+          "code": "SIN-CUS",
+          "stage": "Export Customs",
+          "location": "Changi Airfreight Centre",
+          "status": "cleared",
+          "timestampIso": "2026-11-15T08:40:00Z",
+          "notes": "Export permit SG-44901 cleared."
+        },
+        {
+          "id": "wp-3",
+          "code": "ANC-TRN",
+          "stage": "Regional Transit",
+          "location": "Ted Stevens Anchorage Hub",
+          "status": "active",
+          "timestampIso": "2026-11-16T18:10:00Z",
+          "notes": "Weather hold: awaiting de-icing and connecting JFK slot."
+        },
+        {
+          "id": "wp-4",
+          "code": "JFK-03",
+          "stage": "Destination Dock",
+          "location": "New York Air Cargo Annex",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Revised intake window locked for Nov 18."
+        }
+      ]
+    },
+    {
+      "id": "SOV-3107-JFK",
+      "consignee": "Boston Quantum Cryo Inc.",
+      "referenceCode": "PO-2026-9701",
+      "originHubId": "hub-jfk",
+      "destinationHubId": "hub-rtm",
+      "carrierTier": "Air Freight",
+      "status": "In-Transit",
+      "priority": "Bonded",
+      "valuationUsd": 118570,
+      "weightKg": 392.4,
+      "etaIso": "2026-11-17T12:15:00Z",
+      "createdAtIso": "2026-11-15T10:30:00Z",
+      "dispatchNotes": "Dual inertial shock indicators armed; bonded courier escort confirmed at Schiphol.",
+      "lineItems": [
+        {
+          "sku": "SKU-CRY-1190",
+          "name": "Liquid Nitrogen Manifold Assemblies",
+          "qty": 12,
+          "unitValueUsd": 3890,
+          "unitWeightKg": 28
+        },
+        {
+          "sku": "SKU-OPT-4115",
+          "name": "Fused Silica Photomask Substrates",
+          "qty": 22,
+          "unitValueUsd": 3250,
+          "unitWeightKg": 2.6
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "wp-1",
+          "code": "JFK-03",
+          "stage": "Origin Dispatch",
+          "location": "New York Air Cargo Annex",
+          "status": "cleared",
+          "timestampIso": "2026-11-15T13:00:00Z",
+          "notes": "Bonded ULD container AKE-41902 loaded."
+        },
+        {
+          "id": "wp-2",
+          "code": "JFK-CUS",
+          "stage": "Export Customs",
+          "location": "JFK Export Control Desk",
+          "status": "cleared",
+          "timestampIso": "2026-11-15T20:15:00Z",
+          "notes": "Cleared for transatlantic cargo departure."
+        },
+        {
+          "id": "wp-3",
+          "code": "AMS-TRN",
+          "stage": "Regional Transit",
+          "location": "Schiphol Bonded Transfer",
+          "status": "active",
+          "timestampIso": "2026-11-16T19:00:00Z",
+          "notes": "Cleared ramp transfer; outbound road feeder to Rotterdam."
+        },
+        {
+          "id": "wp-4",
+          "code": "RTM-02",
+          "stage": "Destination Dock",
+          "location": "Rotterdam Deepwater Terminal",
+          "status": "pending",
+          "timestampIso": null,
+          "notes": "Dock 02 ready for intake."
+        }
+      ]
+    }
+  ]
+}

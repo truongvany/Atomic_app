@@ -1,0 +1,294 @@
+{
+  "updatedAtIso": "2026-11-17T06:04:29.393Z",
+  "profile": {
+    "fullName": "Nguyễn Minh Anh",
+    "employeeCode": "ADM-TB01-01",
+    "email": "admin@sovereignsupply.vn",
+    "defaultRole": "overview",
+    "defaultWarehouseCode": "TB-01",
+    "settings": {
+      "liquidGlass": true,
+      "fefoAlerts": true,
+      "actionToasts": true
+    }
+  },
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "email": "admin@sovereignsupply.vn",
+      "passwordHash": "sovereign-tb01-salt:f5933ed52d76d9032ba0f6ee51793e3c4914b13abe4106334bc7969daf0947cb0901299fe962a46db4d37025db0aa575c943a3fc0f136efdfcdd07fa504f5c0d",
+      "createdAtIso": "2026-11-16T08:00:00Z",
+      "profile": {
+        "fullName": "Nguyễn Minh Anh",
+        "employeeCode": "ADM-TB01-01",
+        "email": "admin@sovereignsupply.vn",
+        "defaultRole": "overview",
+        "defaultWarehouseCode": "TB-01",
+        "settings": {
+          "liquidGlass": true,
+          "fefoAlerts": true,
+          "actionToasts": true
+        }
+      }
+    },
+    {
+      "id": "usr-coord-02",
+      "email": "dieuphoi@sovereignsupply.vn",
+      "passwordHash": "sovereign-bd02-salt:9957ef671bc2ba1b31bfe69331bb64730709fce89af058dd990dec662f633ad7913667b5a4f11d9fe5778dff644c47a043dda60c2bdb20be41c53d019f5d6fff",
+      "createdAtIso": "2026-11-16T08:05:00Z",
+      "profile": {
+        "fullName": "Trần Quốc Bảo",
+        "employeeCode": "ADM-BD02-02",
+        "email": "dieuphoi@sovereignsupply.vn",
+        "defaultRole": "dispatch",
+        "defaultWarehouseCode": "BD-02",
+        "settings": {
+          "liquidGlass": true,
+          "fefoAlerts": true,
+          "actionToasts": true
+        }
+      }
+    },
+    {
+      "id": "usr-1794895469100",
+      "email": "test_1794895468970@sovereignsupply.vn",
+      "passwordHash": "81f15d3c8c8c5c3972dc73cd23eb6585:f011bc3878911be921c5e6dd4f02814ddcae25ddef0ee83d5256e5f64200fb98061ca5a3e35720844544f5cca65f5ab4d63f08a36bc35010c1a604ce737bc7a4",
+      "createdAtIso": "2026-11-17T06:04:29.172Z",
+      "profile": {
+        "fullName": "Lê Hoàng Minh",
+        "employeeCode": "ADM-DN-03",
+        "email": "test_1794895468970@sovereignsupply.vn",
+        "defaultRole": "overview",
+        "defaultWarehouseCode": "DN-03",
+        "settings": {
+          "liquidGlass": true,
+          "fefoAlerts": true,
+          "actionToasts": true
+        }
+      }
+    }
+  ],
+  "sessions": [],
+  "fefoLots": [
+    {
+      "lotId": "LO-2024A",
+      "sku": "SKU-MILK-01",
+      "productName": "Sữa tươi Tiệt trùng Vinamilk 1L",
+      "unitLabel": "hộp",
+      "unitPriceVnd": 32000,
+      "warehouseCode": "TB-01",
+      "expiryLabel": "HSD 12/2024",
+      "expirySortKey": "2024-12",
+      "qualifiedQty": 320,
+      "reservedQty": 50
+    },
+    {
+      "lotId": "LO-2024M",
+      "sku": "SKU-MILK-01",
+      "productName": "Sữa tươi Tiệt trùng Vinamilk 1L",
+      "unitLabel": "hộp",
+      "unitPriceVnd": 32000,
+      "warehouseCode": "TB-01",
+      "expiryLabel": "HSD 04/2025",
+      "expirySortKey": "2025-04",
+      "qualifiedQty": 180,
+      "reservedQty": 0
+    },
+    {
+      "lotId": "LO-2024B",
+      "sku": "SKU-OIL-02",
+      "productName": "Dầu ăn cao cấp Simply 2L",
+      "unitLabel": "chai",
+      "unitPriceVnd": 115000,
+      "warehouseCode": "TB-01",
+      "expiryLabel": "HSD 02/2025",
+      "expirySortKey": "2025-02",
+      "qualifiedQty": 120,
+      "reservedQty": 40
+    },
+    {
+      "lotId": "LO-2024R",
+      "sku": "SKU-RICE-03",
+      "productName": "Gạo ST25 Đặc sản Sóc Trăng 5kg",
+      "unitLabel": "túi",
+      "unitPriceVnd": 185000,
+      "warehouseCode": "TB-01",
+      "expiryLabel": "HSD 06/2025",
+      "expirySortKey": "2025-06",
+      "qualifiedQty": 240,
+      "reservedQty": 30
+    },
+    {
+      "lotId": "LO-2024N",
+      "sku": "SKU-SAUCE-04",
+      "productName": "Nước mắm Phú Quốc Hảo hạng 500ml",
+      "unitLabel": "chai",
+      "unitPriceVnd": 68000,
+      "warehouseCode": "TB-01",
+      "expiryLabel": "HSD 09/2025",
+      "expirySortKey": "2025-09",
+      "qualifiedQty": 160,
+      "reservedQty": 20
+    }
+  ],
+  "salesOrders": [
+    {
+      "id": "SO-2024-089",
+      "customerName": "Công ty CP Bách Hóa Xanh",
+      "warehouseCode": "TB-01",
+      "warehouseName": "Kho Tổng Tân Bình (TB-01)",
+      "scheduledDeliveryLabel": "Hôm nay, 16:30",
+      "status": "Nháp",
+      "createdAtIso": "2026-11-16T08:15:00Z",
+      "notes": "Ưu tiên xuất lô FEFO sớm nhất cho cụm siêu thị Tân Bình.",
+      "items": [
+        {
+          "sku": "SKU-MILK-01",
+          "productName": "Sữa tươi Tiệt trùng Vinamilk 1L",
+          "unitLabel": "hộp",
+          "unitPriceVnd": 32000,
+          "warehouseCode": "TB-01",
+          "requestedQty": 150,
+          "reservedQtyForOrder": 0,
+          "allocatedLotId": "LO-2024A"
+        },
+        {
+          "sku": "SKU-OIL-02",
+          "productName": "Dầu ăn cao cấp Simply 2L",
+          "unitLabel": "chai",
+          "unitPriceVnd": 115000,
+          "warehouseCode": "TB-01",
+          "requestedQty": 100,
+          "reservedQtyForOrder": 0,
+          "allocatedLotId": "LO-2024B"
+        }
+      ],
+      "history": [
+        {
+          "id": "h-1",
+          "timestampIso": "2026-11-16T08:15:00Z",
+          "actor": "NV Bán hàng",
+          "action": "Tạo đơn nháp",
+          "detail": "Khởi tạo SO-2024-089 cho Công ty CP Bách Hóa Xanh."
+        },
+        {
+          "id": "h-2",
+          "timestampIso": "2026-11-16T08:16:00Z",
+          "actor": "Hệ thống FEFO",
+          "action": "Kiểm tra khả dụng",
+          "detail": "SKU-MILK-01 đủ tại LO-2024A; SKU-OIL-02 thiếu 20 chai."
+        }
+      ],
+      "dispatchWaypoints": [
+        {
+          "id": "wp-1",
+          "code": "SOẠN",
+          "label": "Soạn hàng FEFO",
+          "status": "pending",
+          "timestampIso": null
+        },
+        {
+          "id": "wp-2",
+          "code": "TB-01",
+          "label": "Xuất kho Tân Bình",
+          "status": "pending",
+          "timestampIso": null
+        },
+        {
+          "id": "wp-3",
+          "code": "GIAO",
+          "label": "Đang vận chuyển",
+          "status": "pending",
+          "timestampIso": null
+        },
+        {
+          "id": "wp-4",
+          "code": "POD",
+          "label": "Hoàn tất giao",
+          "status": "pending",
+          "timestampIso": null
+        }
+      ]
+    },
+    {
+      "id": "SO-2024-088",
+      "customerName": "Co.opmart Lý Thường Kiệt",
+      "warehouseCode": "TB-01",
+      "warehouseName": "Kho Tổng Tân Bình (TB-01)",
+      "scheduledDeliveryLabel": "Hôm nay, 18:00",
+      "status": "Đã giữ FEFO",
+      "createdAtIso": "2026-11-16T06:40:00Z",
+      "notes": "Đã khóa lô FEFO, chờ điều phối xe tải lạnh.",
+      "items": [
+        {
+          "sku": "SKU-RICE-03",
+          "productName": "Gạo ST25 Đặc sản Sóc Trăng 5kg",
+          "unitLabel": "túi",
+          "unitPriceVnd": 185000,
+          "warehouseCode": "TB-01",
+          "requestedQty": 30,
+          "reservedQtyForOrder": 30,
+          "allocatedLotId": "LO-2024R"
+        },
+        {
+          "sku": "SKU-SAUCE-04",
+          "productName": "Nước mắm Phú Quốc Hảo hạng 500ml",
+          "unitLabel": "chai",
+          "unitPriceVnd": 68000,
+          "warehouseCode": "TB-01",
+          "requestedQty": 20,
+          "reservedQtyForOrder": 20,
+          "allocatedLotId": "LO-2024N"
+        }
+      ],
+      "history": [
+        {
+          "id": "h-10",
+          "timestampIso": "2026-11-16T06:40:00Z",
+          "actor": "NV Bán hàng",
+          "action": "Tạo đơn hàng",
+          "detail": "Khởi tạo đơn SO-2024-088 giao trong ngày."
+        },
+        {
+          "id": "h-11",
+          "timestampIso": "2026-11-16T07:05:00Z",
+          "actor": "NV Bán hàng",
+          "action": "Giữ FEFO",
+          "detail": "Đã giữ 30 túi LO-2024R và 20 chai LO-2024N."
+        }
+      ],
+      "dispatchWaypoints": [
+        {
+          "id": "wp-1",
+          "code": "SOẠN",
+          "label": "Soạn hàng FEFO",
+          "status": "cleared",
+          "timestampIso": "2026-11-16T07:20:00Z"
+        },
+        {
+          "id": "wp-2",
+          "code": "TB-01",
+          "label": "Xuất kho Tân Bình",
+          "status": "active",
+          "timestampIso": "2026-11-16T08:10:00Z"
+        },
+        {
+          "id": "wp-3",
+          "code": "GIAO",
+          "label": "Đang vận chuyển",
+          "status": "pending",
+          "timestampIso": null
+        },
+        {
+          "id": "wp-4",
+          "code": "POD",
+          "label": "Hoàn tất giao",
+          "status": "pending",
+          "timestampIso": null
+        }
+      ]
+    }
+  ],
+  "purchaseOrders": [],
+  "approvals": []
+}
