@@ -4,7 +4,9 @@ import {
   FileText,
   LayoutDashboard,
   LogOut,
+  Bell,
   Plus,
+  Search,
   ShoppingBag,
   Truck,
   Warehouse,
@@ -72,6 +74,7 @@ export default function App() {
   const [selectedOrderId, setSelectedOrderId] = useState<string>('SO-2024-089');
   const [toast, setToast] = useState<string | null>(null);
   const [shimmerKey, setShimmerKey] = useState(0);
+  const [headerSearch, setHeaderSearch] = useState('');
 
   const mainScrollRef = useRef<HTMLDivElement | null>(null);
 
@@ -405,61 +408,133 @@ export default function App() {
               liquidGlassEnabled
                 ? 'liquid-glass-header'
                 : 'bg-[#FDFBF7]/95 border border-[#E5DBD0] shadow-sm'
-            } pointer-events-auto relative h-13 rounded-[22px] px-3 sm:px-4 flex items-center justify-between gap-3 overflow-hidden`}
+            } pointer-events-auto relative h-15 rounded-[24px] px-3.5 sm:px-5 flex items-center justify-between gap-3 sm:gap-4 overflow-hidden`}
           >
             {liquidGlassEnabled && (
               <span
                 aria-hidden="true"
-                className="header-shimmer pointer-events-none absolute inset-y-0 -left-full w-1/2 bg-gradient-to-r from-transparent via-white/45 to-transparent"
+                className="header-shimmer pointer-events-none absolute inset-y-0 -left-full w-1/2 bg-gradient-to-r from-transparent via-white/50 to-transparent"
               />
             )}
 
-            {/* Left Zone: Logo + Clean Brand Title (Protected with min-w-0 & truncate) */}
-            <div className="flex items-center gap-2.5 min-w-0 flex-1 relative z-10">
-              <BrandLogo size="sm" shimmerKey={shimmerKey} onClick={handleLogoTap} />
+            {/* Left Zone: Brand Logo & Title & Live Status Indicator */}
+            <div className="flex items-center gap-3 min-w-0 shrink-0 relative z-10">
+              <BrandLogo size="md" shimmerKey={shimmerKey} onClick={handleLogoTap} />
               <button
                 type="button"
                 onClick={handleLogoTap}
-                className="min-w-0 flex items-baseline gap-1.5 text-left cursor-pointer"
+                className="min-w-0 flex flex-col items-start text-left cursor-pointer group"
               >
-                <span className="font-serif text-[17px] sm:text-[18px] font-semibold text-[#3D040E] tracking-[-0.02em] truncate">
-                  Sovereign
-                </span>
-                <span className="hidden sm:inline text-[11.5px] font-medium text-[#7D6C6E] whitespace-nowrap shrink-0">
-                  Admin
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <span className="font-serif text-[18px] sm:text-[19px] font-bold text-[#3D040E] tracking-tight group-hover:text-[#640D22] transition-colors">
+                    Sovereign
+                  </span>
+                  <span className="px-1.5 py-0.5 rounded-md bg-[#640D22]/10 text-[#640D22] font-mono text-[10px] font-extrabold uppercase tracking-wider">
+                    PRO
+                  </span>
+                </div>
+                <div className="hidden sm:flex items-center gap-1.5 text-[10.5px] text-[#7D6C6E] font-medium">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#059669]" />
+                  </span>
+                  <span>Điều hành Chuỗi cung ứng FEFO</span>
+                </div>
               </button>
             </div>
 
-            {/* Right Zone: Strictly 2 Focal Controls (+ Tạo đơn & Avatar) */}
-            <div className="flex items-center gap-2 shrink-0 relative z-10">
-              <motion.button
-                type="button"
-                whileTap={{ scale: 0.96 }}
-                onClick={() => setNewOrderOpen(true)}
-                className="h-8 px-3 rounded-full bg-[#640D22] hover:bg-[#540316] text-[#FFFFFF] text-[11.5px] font-bold inline-flex items-center gap-1.5 cursor-pointer shadow-[0_3px_10px_rgba(100,13,34,0.22)] whitespace-nowrap shrink-0"
-              >
-                <Plus className="w-3.5 h-3.5" />
-                <span>Tạo đơn</span>
-              </motion.button>
+            {/* Middle Zone: Sleek Quick Command/Search Bar (Visible on md+) */}
+            <div className="hidden md:flex items-center flex-1 max-w-md mx-2 relative z-10">
+              <div className="relative w-full">
+                <Search className="w-4 h-4 text-[#7D6C6E] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  type="search"
+                  value={headerSearch}
+                  onChange={(e) => setHeaderSearch(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && headerSearch.trim()) {
+                      handleTabSwitch('sales');
+                      notify(`Tìm kiếm: "${headerSearch}" trong danh sách đơn`);
+                    }
+                  }}
+                  placeholder="Tìm mã đơn, SKU, kho hoặc khách hàng..."
+                  className="w-full h-9 pl-9 pr-12 rounded-full bg-[#FFFFFF]/75 border border-[#EAE2D9] focus:border-[#640D22] focus:bg-white text-[12px] text-[#3D040E] placeholder-[#9E8E90] outline-none transition-all shadow-inner"
+                />
+                <div className="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-0.5 pointer-events-none">
+                  <kbd className="px-1.5 py-0.5 rounded bg-[#EFE8DF] text-[9.5px] font-mono font-semibold text-[#6E5B5D] border border-[#DDD3C8]">
+                    ↵
+                  </kbd>
+                </div>
+              </div>
+            </div>
 
+            {/* Right Zone: Notification, Quick Order Button, and User Capsule Pill */}
+            <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 relative z-10">
+              {/* Notification Center Bell */}
               <motion.button
                 type="button"
                 whileTap={{ scale: 0.92 }}
+                onClick={() => {
+                  handleTabSwitch('overview');
+                  const count = state?.approvals.filter((a) => a.status === 'Chờ duyệt').length ?? 0;
+                  notify(
+                    count > 0
+                      ? `Có ${count} yêu cầu cần phê duyệt ngay.`
+                      : 'Hệ thống vận hành bình thường, không có đơn tồn đọng.'
+                  );
+                }}
+                title="Thông báo hệ thống"
+                className="relative w-9 h-9 rounded-full bg-white/70 hover:bg-white border border-[#EAE2D9] text-[#5C4B4C] hover:text-[#3D040E] flex items-center justify-center transition-all cursor-pointer shadow-xs"
+              >
+                <Bell className="w-4 h-4" />
+                {(state?.approvals.filter((a) => a.status === 'Chờ duyệt').length ?? 0) > 0 && (
+                  <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-[#EF4444] border-2 border-white ring-1 ring-[#EF4444]/40 animate-pulse" />
+                )}
+              </motion.button>
+
+              {/* Create Sales Order Primary Button */}
+              <motion.button
+                type="button"
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.02 }}
+                onClick={() => setNewOrderOpen(true)}
+                className="h-9 px-3.5 rounded-full bg-gradient-to-r from-[#640D22] via-[#540316] to-[#450212] hover:from-[#781029] hover:to-[#540316] text-white text-[12px] font-bold inline-flex items-center gap-1.5 cursor-pointer shadow-[0_4px_14px_rgba(100,13,34,0.28)] border border-white/20 whitespace-nowrap transition-all"
+              >
+                <Plus className="w-4 h-4" strokeWidth={2.5} />
+                <span className="hidden sm:inline">Tạo đơn mới</span>
+                <span className="sm:hidden">Tạo đơn</span>
+              </motion.button>
+
+              {/* User Profile Capsule Button */}
+              <motion.button
+                type="button"
+                whileTap={{ scale: 0.95 }}
                 onClick={() => setIsProfileOpen((prev) => !prev)}
                 aria-label="Mở trang Profile và Cài đặt"
-                className={`relative w-8 h-8 rounded-full p-[1.5px] cursor-pointer transition-shadow shrink-0 ${
+                className={`relative h-9 pl-1 pr-2.5 rounded-full bg-white/80 hover:bg-white border transition-all flex items-center gap-2 cursor-pointer ${
                   isProfileOpen
-                    ? 'ring-2 ring-[#640D22] shadow-[0_0_0_3px_rgba(100,13,34,0.14)]'
-                    : 'shadow-[0_3px_10px_rgba(61,4,14,0.18)]'
+                    ? 'border-[#640D22] shadow-[0_0_0_2px_rgba(100,13,34,0.18)] bg-white'
+                    : 'border-[#EAE2D9] shadow-xs'
                 }`}
-                style={{
-                  background: 'linear-gradient(135deg, #F7E5B4 0%, #DFBA70 50%, #721C2A 100%)',
-                }}
               >
-                <span className="w-full h-full rounded-full bg-gradient-to-br from-[#6D1227] to-[#410311] text-[#F7E5B4] font-serif text-[11px] font-semibold flex items-center justify-center">
-                  {avatarInitials}
-                </span>
+                <div
+                  className="w-7 h-7 rounded-full p-[1.5px] shrink-0"
+                  style={{
+                    background: 'linear-gradient(135deg, #F7E5B4 0%, #DFBA70 50%, #721C2A 100%)',
+                  }}
+                >
+                  <span className="w-full h-full rounded-full bg-gradient-to-br from-[#6D1227] to-[#410311] text-[#F7E5B4] font-serif text-[11px] font-bold flex items-center justify-center">
+                    {avatarInitials}
+                  </span>
+                </div>
+                <div className="hidden xl:flex flex-col items-start leading-tight">
+                  <span className="text-[11.5px] font-bold text-[#3D040E] truncate max-w-[100px]">
+                    {state?.profile.fullName ?? 'Admin'}
+                  </span>
+                  <span className="font-mono text-[9px] text-[#7D6C6E]">
+                    {state?.profile.defaultWarehouseCode ?? 'Kho'}
+                  </span>
+                </div>
               </motion.button>
             </div>
           </header>

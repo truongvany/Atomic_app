@@ -1,5 +1,5 @@
 {
-  "updatedAtIso": "2026-11-17T06:04:29.393Z",
+  "updatedAtIso": "2026-11-17T06:44:43.094Z",
   "profile": {
     "fullName": "Nguyễn Minh Anh",
     "employeeCode": "ADM-TB01-01",
@@ -68,7 +68,18 @@
       }
     }
   ],
-  "sessions": [],
+  "sessions": [
+    {
+      "token": "c73e054afcbbf52a33f9cf81883badcd09e15c925c5f424d0e24c92324578f75",
+      "userId": "usr-admin-01",
+      "createdAtIso": "2026-11-17T06:43:44.279Z"
+    },
+    {
+      "token": "4ff368f66d2eee7a149b6de736c203999ecd1ca45278d81150bbf3283b97d2aa",
+      "userId": "usr-admin-01",
+      "createdAtIso": "2026-11-17T06:44:43.094Z"
+    }
+  ],
   "fefoLots": [
     {
       "lotId": "LO-2024A",
